@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+    <style>
+        *{
+            text-align:center;
+            
+            
+        }
+        button{
+            margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+    <form id="simpleForm">
+        <input type="text" placeholder="username" id="username">
+        
+        
+       <input type="password" placeholder="password" id="password">
+       <button type="submit">Submit</button>
+    </form>
+    
+    <script>
+        
+     document.getElementById('simpleForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    validateForm();
+});
+
+function validateForm() {
+    const username = document.getElementById('username').value;
+ 
+         
+document.getElementById('password').value;
+  
+
+    let isValid = true;
+
+    if (!validateUsername(username)) {
+        errorMessages.innerHTML += '<p>Username must be        3-10 characters long and contain only letters and numbers.</p>';
+        isValid = false;
+    }
+
+    if (!validatePassword(password)) {
+        errorMessages.innerHTML += '<p>Email must be a valid email address.</p>';
+        isValid = false;
+    }
+
+      
+        
+        
+    </script>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        *{
+            text-align:center;
+        }
+        a:link{
+            text-decoration:none;
+        }
+        input{
+            padding:10px;
+            width:130px;
+        }
+         #select:{
+            padding:10px;
+        }
+    </style>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+</head>
+<body style="">
+    
+  <h3 style="text-align:center;font-family:times;color:green;">Avacoin Converter to Nigerian Currency</h3>
+    <a href="address.txt" oncopy="true">
+     <h4 style="text-align:center;">UQCZ...UCXQ</h4></a>
+     <input style="border:1px solid red;;color:dodgerblue;padding:2px;" type="text" value="UQCZ-FERveYcn8-ea0WsG3RDVDtLSJntjf0NPWlbfRayUCXQ" id="myInput"></h5>
+<button onclick="myFunction()">Copy text</button>
+
+     <img src="wallet.png" alt="" width="200px;">
+     <h5 style="text-align:left;">Your Avacoin Balance: 0</h5>
+     
+     
+     
+     
+     <section style="display:block;">
+  
+         <h5>Send To Bank Account</h5>
+   <br><br>
+     <select style="border:1px solid red;border-top-left-radius:10px;">
+         <option>Opay</option>
+         <option>Palmpay</option>
+         <option>Moniepoint</option>
+         <option>Wema Bank</option>
+         <option>Kuda Bank</option>
+     </select>
+     <select style="border:1px solid dodgerblue;border-radius:10px;">
+         <option>5000 avacoin ₦11000</option>
+      <option>10000 avacoin ₦22000</option>
+      <option>15000 avacoin ₦36000</option>
+      <option>20000 avacoin ₦44000</option>
+     </select><br><br><br><br><br> <input type="tel" placeholder="Account Number" required maxlength="10" style="width:150;border-radius:10px;font-weight:bold;border:1px solid red;">
+  
+      <a href="balance2.html">   <button style="width:150px;padding:10px;border-radius:10px;font-weight:bold;border:1px solid dodgerblue;">Withdraw</button></a>
+    
+     </section>
+     
+<script>
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+</body>
+</html>
